@@ -6,7 +6,7 @@ export default function Nav() {
     <div className="header__nav">
       <div className="nav__content">
         <nav className="nav">
-          <h1>AbdThy</h1>
+          <h1 className="logo">AbdThy</h1>
           <ul className="list">
             <li className="item">
               <Link className="link" to="/home">

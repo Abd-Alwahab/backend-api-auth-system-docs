@@ -1,11 +1,20 @@
+*::selection {
+  background-color: #222;
+  color: #fff;
+}
+
 .header__nav {
   width: 100%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   margin: 0;
+  height: 9vh;
+  z-index: 9999;
+  position: relative;
 }
 
 .nav__content {
-  width: 80%;
+  width: 90%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -32,4 +41,76 @@
   text-decoration: none;
   color: #222;
   font-weight: bold;
+}
+
+.logo {
+  margin: 0;
+}
+
+/* Reset Styles  */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Style Starts Here  */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 91vh;
+  margin: 0 auto;
+}
+
+.header__img--container {
+  width: 44%;
+  /* background-color: antiquewhite; */
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__box {
+  width: 50%;
+  /* position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%); */
+}
+
+.header__title {
+  font-size: 2.5rem;
+  color: #222;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.header__desc {
+  margin: 0.5rem 0;
+}
+
+.header__link {
+  width: fit-content;
+  display: block;
+  margin: 2rem 0;
+  border: 2px solid #222;
+  border-radius: 100px;
+  padding: 1rem 1.4rem;
+  transition: all 0.4s;
+}
+
+.header__link:hover {
+  background-color: #222;
+  color: #fff;
 }
