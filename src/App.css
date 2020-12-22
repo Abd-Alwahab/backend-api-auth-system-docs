@@ -1,6 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+
+.App {
+  overflow: hidden !important;
+}
+
 *::selection {
   background-color: #222;
   color: #fff;
+}
+
+body {
+  font-family: "PT Serif", serif;
 }
 
 .container {
@@ -50,6 +60,7 @@
 
 .active {
   background-color: teal;
+  color: #fff !important;
 }
 
 .logo {
@@ -127,14 +138,19 @@ h5 {
 /* Sub Navigation Style Start Here */
 .sub__nav {
   width: 20%;
-  margin-top: 4rem;
+
+  padding-top: 2rem;
+  margin-right: 1.2rem;
+  position: fixed;
+  background-color: rgb(36, 40, 44);
+  height: 100vh;
 }
 
 .sub__list {
-  width: 100%;
+  width: 80%;
   list-style: none;
   padding: 0;
-  background-color: tomato;
+  background-color: #fff;
 }
 
 .sub__item {
@@ -146,11 +162,11 @@ h5 {
 }
 
 .sub__item:not(:last-of-type) {
-  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(39, 39, 39);
 }
 
 .sub__link {
-  color: #fff;
+  color: #222;
   text-decoration: none;
   display: block;
   height: 100%;
@@ -160,10 +176,37 @@ h5 {
 /* Docs Page Style */
 .docs {
   width: 100%;
-  display: flex;
+
+  justify-content: space-between;
+  /* background-color: rgb(97, 97, 97); */
 }
 
 .docs_content {
+  position: relative;
   width: 80%;
+  left: 20%;
   justify-content: space-between;
+  padding: 3.2rem;
+  overflow: hidden !important;
+}
+
+.docs_desc {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+.hilight {
+  background-color: #222;
+  color: #fff;
+  font-weight: bold;
+  padding: 1.4rem;
+  width: fit-content;
+  word-spacing: 15px;
+  margin: 1rem 0;
+}
+
+.hilight::selection {
+  background-color: tomato;
+  padding: 0.4rem;
 }
