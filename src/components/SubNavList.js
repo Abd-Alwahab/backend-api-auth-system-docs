@@ -1,61 +1,61 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function SubNavList({ match }) {
   return (
-    <div>
+    <>
       <nav className="sub__nav">
         <ul className="sub__list">
           <li className="sub__item">
-            <Link className="sub__link" to={`${match.path}/installation`}>
+            <NavLink className="sub__link" to={`${match.path}/installation`}>
               {" "}
               Installation
-            </Link>
+            </NavLink>
           </li>
 
           <li className="sub__item">
-            <Link className="sub__link" to={`${match.path}/signup`}>
+            <NavLink className="sub__link" to={`${match.path}/signup`}>
               {" "}
               Signup
-            </Link>
+            </NavLink>
           </li>
 
           <li className="sub__item">
-            <Link className="sub__link" to={`${match.path}/signup`}>
+            <NavLink className="sub__link" to={`${match.path}/login`}>
               {" "}
               Login
-            </Link>
+            </NavLink>
           </li>
 
           <li className="sub__item">
-            <Link className="sub__link" to={`${match.path}/signup`}>
+            <NavLink className="sub__link" to={`${match.path}/forgotpassword`}>
               {" "}
               Forgot Password
-            </Link>
+            </NavLink>
           </li>
 
           <li className="sub__item">
-            <Link className="sub__link" to={`${match.path}/signup`}>
+            <NavLink className="sub__link" to={`${match.path}/updatepassword`}>
               {" "}
               Update Password
-            </Link>
+            </NavLink>
           </li>
 
           <li className="sub__item">
-            <Link className="sub__link" to={`${match.path}/signup`}>
+            <NavLink className="sub__link" to={`${match.path}/updateuser`}>
               {" "}
               Update Info
-            </Link>
+            </NavLink>
           </li>
 
           <li className="sub__item">
-            <Link className="sub__link" to={`${match.path}/signup`}>
+            <NavLink className="sub__link" to={`${match.path}/users`}>
               {" "}
               Get Users
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 }

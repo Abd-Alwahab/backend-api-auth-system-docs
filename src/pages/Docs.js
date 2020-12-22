@@ -8,11 +8,13 @@ import SubNavList from "../components/SubNavList";
 export default function Docs({ match }) {
   return (
     <Container>
-      <SubNavList match={match} />
+      <div className="docs">
+        <SubNavList match={match} />
 
-      <div className="docs_content">
-        <Route path={`${match.path}/installation`} component={Installation} />
-        <Route path={`${match.path}/signup`} component={Signup} />
+        <div className="docs_content">
+          <Route path={`${match.path}/installation`} component={Installation} />
+          <Route path={`${match.path}/signup`} component={Signup} />
+        </div>
       </div>
     </Container>
   );
