@@ -247,3 +247,11 @@ h5 {
   display: block;
   /* font-weight: bold; */
 }
+
+.img_step {
+  margin-bottom: 1.2rem;
+  border: 2px solid #222;
+  position: relative;
+  display: block;
+  /* z-index: 9999; */
+}

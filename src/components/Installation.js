@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import step_1 from "./../media/installation/step_1.png";
 import step_2 from "./../media/installation/step_2.png";
 import step_3 from "./../media/installation/step_3.png";
 import step_4 from "./../media/installation/step_4.png";
+import { mongoImages } from "./../util/data";
+import Collapsible from "react-collapsible";
 
 function Installation() {
+  const [mongoOpen, setMongoOpen] = useState(false);
   return (
     <div>
       <h2>How To Get Started</h2>
@@ -87,7 +90,31 @@ function Installation() {
         string
       </p>
 
-      <p className="docs_desc">{}</p>
+      <p className="docs_desc">
+        <Collapsible
+          tabIndex={0}
+          lazyRender
+          transitionTime={100}
+          transitionTime={100}
+          easing={"cubic-bezier(0.175, 0.885, 0.32, 2.275)"}
+          transitionCloseTime={100}
+          onOpen={() => setMongoOpen(true)}
+          onClose={() => setMongoOpen(false)}
+          trigger={!mongoOpen ? "Show MongoDB Steps" : "Hide MongoDB Steps"}
+          triggerStyle={{
+            backgroundColor: "tomato",
+            color: "#fff",
+            cursor: "pointer",
+            padding: "1rem .6rem",
+            margin: "1rem 0",
+            display: "block",
+          }}
+        >
+          {mongoImages.map((img) => (
+            <img src={img} alt="mongo steps" className="docs__img img_step" />
+          ))}
+        </Collapsible>
+      </p>
     </div>
   );
 }
