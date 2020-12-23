@@ -100,6 +100,7 @@ function Installation() {
           transitionCloseTime={100}
           onOpen={() => setMongoOpen(true)}
           onClose={() => setMongoOpen(false)}
+          triggerOpenedClassName="trigger__open"
           trigger={!mongoOpen ? "Show MongoDB Steps" : "Hide MongoDB Steps"}
           triggerStyle={{
             backgroundColor: "tomato",
