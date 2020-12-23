@@ -194,6 +194,7 @@ h5 {
   line-height: 1.6;
   font-size: 1.2rem;
   width: 90%;
+  margin: 1rem 0;
 }
 
 .hilight {
@@ -209,4 +210,9 @@ h5 {
 .hilight::selection {
   background-color: tomato;
   padding: 0.4rem;
+}
+
+.docs__img {
+  width: 70%;
+  margin: 1rem 0;
 }
