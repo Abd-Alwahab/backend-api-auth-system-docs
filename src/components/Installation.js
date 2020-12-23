@@ -1,6 +1,8 @@
 import React from "react";
 import step_1 from "./../media/installation/step_1.png";
 import step_2 from "./../media/installation/step_2.png";
+import step_3 from "./../media/installation/step_3.png";
+import step_4 from "./../media/installation/step_4.png";
 
 function Installation() {
   return (
@@ -24,6 +26,38 @@ function Installation() {
           <div className="hilight">npm install</div>
           <p className="docs_desc">That will ahead and add the node_modules </p>
           <img src={step_2} alt="open folder" className="docs__img" />
+        </p>
+        <p className="docs_desc">
+          Once you have the node_modules added to your porject, now we need to create a
+          file to store the environment variables that we need in order for our
+          application to run, now if you are wondering why we are using environment
+          variables here, well the answer is very simple its just to store secure and
+          important information
+          <p className="docs_desc">
+            To create the environment variables you need to run the follwoing command{" "}
+          </p>
+          <div className="hilight">touch .env</div>
+          <p className="docs_desc">
+            That will ahead and add new file called .env to your project tree{" "}
+          </p>
+          <img src={step_3} alt="open folder" className="docs__img" />
+          <p className="docs_desc">
+            Now We need to add the following environment variables to our file so our
+            application cloud run
+          </p>
+          <div className="hilight">
+            mongodb_url <br />
+            token_secret
+            <br /> token_date
+            <br />
+            email_user <br />
+            email_password <br />
+            cloud_name <br />
+            cloud_api
+            <br />
+            cloud_secrit
+          </div>
+          <img src={step_4} alt="open folder" className="docs__img" />
         </p>
       </p>
     </div>
