@@ -73,6 +73,21 @@ function Installation() {
           </ul>
         </p>
       </div>
+
+      <p className="docs_desc">
+        Now let us undersatand what values to add to these environment variables, the
+        first one is mongo_db , its your contection string that you will use to contect
+        your api to mongoDB atlas
+      </p>
+
+      <p className="docs_desc">
+        To get you contection string, you need to create an account here and{" "}
+        <a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> , Once you have
+        your account created then you need to follow these steps to get your contection
+        string
+      </p>
+
+      <p className="docs_desc">{}</p>
     </div>
   );
 }
