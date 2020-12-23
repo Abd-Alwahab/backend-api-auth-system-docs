@@ -60,6 +60,19 @@ function Installation() {
           <img src={step_4} alt="open folder" className="docs__img" />
         </p>
       </p>
+
+      <div className="note_danger">
+        <div className="note">Note</div>
+        <p className="docs_desc">
+          <ul>
+            <li>Do not be confuse becuase of the number of the environment variables </li>
+            <li>
+              Make sure to use the exact same name as shown in the screeshot otherwise
+              thing will not work for you.
+            </li>
+          </ul>
+        </p>
+      </div>
     </div>
   );
 }

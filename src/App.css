@@ -220,3 +220,30 @@ h5 {
   width: 70%;
   margin: 1rem 0;
 }
+
+.note {
+  width: 4rem;
+  height: 4rem;
+  background-color: tomato;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -2rem;
+  top: -2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+}
+
+.note_danger {
+  position: relative;
+  width: 90%;
+  background-color: tomato;
+  color: #fff;
+  padding: 1rem 0;
+  margin: 3.2rem 0;
+  display: block;
+  /* font-weight: bold; */
+}
