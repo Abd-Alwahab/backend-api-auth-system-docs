@@ -5,6 +5,7 @@ import step_3 from "./../media/installation/step_3.png";
 import step_4 from "./../media/installation/step_4.png";
 import { mongoImages } from "./../util/data";
 import Collapsible from "react-collapsible";
+import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 
 function Installation() {
   const [mongoOpen, setMongoOpen] = useState(false);
@@ -92,16 +93,24 @@ function Installation() {
 
       <p className="docs_desc">
         <Collapsible
-          tabIndex={0}
+          // tabIndex={0}
           lazyRender
-          transitionTime={100}
-          transitionTime={100}
-          easing={"cubic-bezier(0.175, 0.885, 0.32, 2.275)"}
-          transitionCloseTime={100}
-          onOpen={() => setMongoOpen(true)}
-          onClose={() => setMongoOpen(false)}
-          triggerOpenedClassName="trigger__open"
-          trigger={!mongoOpen ? "Show MongoDB Steps" : "Hide MongoDB Steps"}
+          open={mongoOpen}
+          transitionTime={900}
+          transitionCloseTime={300}
+          onClick={() => setMongoOpen(!mongoOpen)}
+          trigger={
+            <button className="btn-collaps">
+              <div>
+                {!mongoOpen ? (
+                  <FaArrowDown size="2em" color="#fff" />
+                ) : (
+                  <FaArrowUp size="2em" color="green" />
+                )}
+              </div>
+              <h3>Show MondoDB Steps</h3>
+            </button>
+          }
           triggerStyle={{
             backgroundColor: "tomato",
             color: "#fff",

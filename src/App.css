@@ -255,6 +255,7 @@ h5 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   /* z-index: 9999; */
 }
 
@@ -266,4 +267,20 @@ h5 {
 
 .Collapsible:focus {
   outline: hidden !important;
+}
+
+.btn-collaps {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.btn-collaps:focus {
+  outline: none;
+}
+
+.btn-collaps h3 {
+  margin-left: 0.6rem;
+  color: #fff;
 }
