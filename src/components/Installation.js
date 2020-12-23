@@ -107,7 +107,7 @@ function Installation() {
             color: "#fff",
             cursor: "pointer",
             padding: "1rem .6rem",
-            margin: "1rem 0",
+            outlineStyle: "none",
             display: "block",
           }}
         >
