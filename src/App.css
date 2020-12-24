@@ -263,6 +263,8 @@ h5 {
   position: relative;
   background-color: #e6e6e6;
   box-sizing: border-box;
+  margin-bottom: 2rem;
+  width: 90%;
 }
 
 .Collapsible:focus {
@@ -290,4 +292,8 @@ h5 {
   background-color: #222;
   padding: 0.2rem;
   color: #fff;
+}
+
+.steps_container {
+  margin-top: 3rem;
 }

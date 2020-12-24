@@ -91,7 +91,7 @@ function Installation() {
         string
       </p>
 
-      <p className="docs_desc">
+      <div className="steps_container">
         <Collapsible
           // tabIndex={0}
           lazyRender
@@ -124,25 +124,118 @@ function Installation() {
             <img src={img} alt="mongo steps" className="docs__img img_step" />
           ))}
         </Collapsible>
-      </p>
 
-      <p className="docs_desc">
-        If you followed the mongoDB steps then you should get you conection string , let
-        us move to the next two environment variables, which will be the{" "}
-        <div className="hilight">
-          token_secret
-          <br /> token_date
-          <br />
-        </div>
-      </p>
+        <Collapsible
+          // tabIndex={0}
+          lazyRender
+          open={mongoOpen}
+          transitionTime={900}
+          transitionCloseTime={300}
+          onClick={() => setMongoOpen(!mongoOpen)}
+          trigger={
+            <button className="btn-collaps">
+              <div>
+                {!mongoOpen ? (
+                  <FaArrowDown size="2em" color="#fff" />
+                ) : (
+                  <FaArrowUp size="2em" color="green" />
+                )}
+              </div>
+              <h3>Show JSON Web Token Steps</h3>
+            </button>
+          }
+          triggerStyle={{
+            backgroundColor: mongoOpen ? "green" : "tomato",
+            color: "#fff",
+            cursor: "pointer",
+            padding: "1rem .6rem",
+            outlineStyle: "none",
+            display: "block",
+          }}
+        >
+          <p className="docs_desc">
+            If you followed the mongoDB steps then you should get you conection string ,
+            let us move to the next two environment variables, which will be the{" "}
+            <div className="hilight">
+              token_secret
+              <br /> token_date
+              <br />
+            </div>
+          </p>
 
-      <p className="docs_desc">
-        These are very simple once , for the <span className="dark">token_secret</span>,
-        just give it any long text , juts make sure that is at least{" "}
-        <span className="dark"> 32 charcters</span>, and for the{" "}
-        <span className="dark"> token_date</span>, just give it any number plus the letter
-        d, this will be used for as expire date for the json web token
-      </p>
+          <p className="docs_desc">
+            These are very simple once , for the{" "}
+            <span className="dark">token_secret</span>, just give it any long text , juts
+            make sure that is at least <span className="dark"> 32 charcters</span>, and
+            for the <span className="dark"> token_date</span>, just give it any number
+            plus the letter d, this will be used for as expire date for the json web
+            token, in my case I used 90d, you can use the same as me.
+          </p>
+
+          <p className="docs_desc">
+            Now Let us move to the next once which are:
+            <div className="hilight">
+              email_user <br />
+              email_password <br />
+            </div>
+          </p>
+        </Collapsible>
+
+        <Collapsible
+          // tabIndex={0}
+          lazyRender
+          open={mongoOpen}
+          transitionTime={900}
+          transitionCloseTime={300}
+          onClick={() => setMongoOpen(!mongoOpen)}
+          trigger={
+            <button className="btn-collaps">
+              <div>
+                {!mongoOpen ? (
+                  <FaArrowDown size="2em" color="#fff" />
+                ) : (
+                  <FaArrowUp size="2em" color="green" />
+                )}
+              </div>
+              <h3>Show SendGrid Steps</h3>
+            </button>
+          }
+          triggerStyle={{
+            backgroundColor: mongoOpen ? "green" : "tomato",
+            color: "#fff",
+            cursor: "pointer",
+            padding: "1rem .6rem",
+            outlineStyle: "none",
+            display: "block",
+          }}
+        >
+          <ol>
+            <li>
+              Create an Account With <a href="https://sendgrid.com/">SendGrid</a>{" "}
+            </li>
+
+            <li>Login in your account</li>
+            <li>From your dashboard page , Expand The Email API Tap</li>
+            <li>From the Email API Tap, select Integration Guide</li>
+            <li>Now Click on the SMTP Relay</li>
+            <li>
+              Chosse a name for you key and click create key, this will create an api key
+              for you{" "}
+            </li>
+            <li>Now, you will see username and password </li>
+            <li>
+              Copy the user name and the password and use them in the environment
+              variables{" "}
+            </li>
+            <li>
+              Use the username for the <span className="dark">email_user</span>{" "}
+            </li>
+            <li>
+              Use the password for the <span className="dark">email_password</span>{" "}
+            </li>
+          </ol>
+        </Collapsible>
+      </div>
     </div>
   );
 }
