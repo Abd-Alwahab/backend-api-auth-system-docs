@@ -11,6 +11,7 @@ function Installation() {
   const [mongoOpen, setMongoOpen] = useState(false);
   const [sendGridOpen, setSendGridOpen] = useState(false);
   const [jwtOpen, setJWtOpen] = useState(false);
+  const [cloudOpen, setCloudOpen] = useState(false);
   return (
     <div>
       <h2>How To Get Started</h2>
@@ -275,9 +276,73 @@ function Installation() {
             </li>
           </ol>
         </Collapsible>
+
+        <Collapsible
+          // tabIndex={0}
+          lazyRender
+          open={cloudOpen}
+          transitionTime={900}
+          transitionCloseTime={300}
+          onClick={() => setCloudOpen(false)}
+          onClosing={() => {
+            setCloudOpen(false);
+          }}
+          onOpening={() => {
+            setCloudOpen(true);
+          }}
+          trigger={
+            <button className="btn-collaps">
+              <div>
+                {!cloudOpen ? (
+                  <FaArrowDown size="2em" color="#fff" />
+                ) : (
+                  <FaArrowRight size="2em" color="#fff" />
+                )}
+              </div>
+              <h3>Show Cloudinary Steps</h3>
+            </button>
+          }
+          triggerStyle={{
+            backgroundColor: cloudOpen ? "green" : "tomato",
+            color: "#fff",
+            cursor: "pointer",
+            padding: "1rem .6rem",
+            outlineStyle: "none",
+            display: "block",
+            transitionDuration: ".5s",
+          }}
+        >
+          <ol className="sub_list_item">
+            <li>
+              Create an Account With <a href="https://cloudinary.com">Cloudinary</a>{" "}
+            </li>
+
+            <li>Login into your account</li>
+            <li>
+              From your dashboard page , You will see the{" "}
+              <span className="dark">Account Details </span> Box
+            </li>
+            <li>
+              Copy the
+              <span className="dark"> Cloud name </span> and use it in the cloud_name
+              environment variable
+            </li>
+            <li>
+              Copy the <span className="dark">API Key</span> and past it in the
+              <span className="dark"> cloud_api </span> environment variable
+            </li>
+            <li>
+              Copy the <span className="dark">API Secret</span> and past it in the
+              <span className="dark"> cloud_secrit </span> environment variable
+            </li>
+            <li>Now, you are done. </li>
+          </ol>
+        </Collapsible>
       </div>
     </div>
   );
 }
+
+//
 
 export default Installation;
