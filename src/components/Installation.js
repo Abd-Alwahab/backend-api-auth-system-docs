@@ -173,32 +173,37 @@ function Installation() {
             transitionDuration: ".5s",
           }}
         >
-          <p className="docs_desc">
-            If you followed the mongoDB steps then you should get you conection string ,
-            let us move to the next two environment variables, which will be the{" "}
-            <div className="hilight">
-              token_secret
-              <br /> token_date
-              <br />
-            </div>
-          </p>
+          <div className="content_container">
+            <p className="docs_desc">
+              If you followed the mongoDB steps then you should get you conection string ,
+              let us move to the next two environment variables, which will be the{" "}
+              <div className="m-s">
+                <div className="dark">
+                  token_secret <br />
+                  token_date
+                </div>
+              </div>
+            </p>
 
-          <p className="docs_desc">
-            These are very simple once , for the{" "}
-            <span className="dark">token_secret</span>, just give it any long text , juts
-            make sure that is at least <span className="dark"> 32 charcters</span>, and
-            for the <span className="dark"> token_date</span>, just give it any number
-            plus the letter d, this will be used for as expire date for the json web
-            token, in my case I used 90d, you can use the same as me.
-          </p>
+            <p className="docs_desc">
+              These are very simple once , for the{" "}
+              <span className="dark">token_secret</span>, just give it any long text ,
+              juts make sure that is at least <span className="dark"> 32 charcters</span>,
+              and for the <span className="dark"> token_date</span>, just give it any
+              number plus the letter d, this will be used for as expire date for the json
+              web token, in my case I used 90d, you can use the same as me.
+            </p>
 
-          <p className="docs_desc">
-            Now Let us move to the next once which are:
-            <div className="hilight">
-              email_user <br />
-              email_password <br />
-            </div>
-          </p>
+            <p className="docs_desc">
+              Now Let us move to the next once which are:
+              <div className="m-s">
+                <div className="dark">
+                  email_user <br />
+                  email_password
+                </div>
+              </div>
+            </p>
+          </div>
         </Collapsible>
 
         <Collapsible
@@ -236,15 +241,23 @@ function Installation() {
             transitionDuration: ".5s",
           }}
         >
-          <ol>
+          <ol className="sub_list_item">
             <li>
               Create an Account With <a href="https://sendgrid.com/">SendGrid</a>{" "}
             </li>
 
-            <li>Login in your account</li>
-            <li>From your dashboard page , Expand The Email API Tap</li>
-            <li>From the Email API Tap, select Integration Guide</li>
-            <li>Now Click on the SMTP Relay</li>
+            <li>Login into your account</li>
+            <li>
+              From your dashboard page , Expand The{" "}
+              <span className="dark">Email API </span>Tap
+            </li>
+            <li>
+              From the Email API Tap, select{" "}
+              <span className="dark"> Integration Guide </span>
+            </li>
+            <li>
+              Now Click on the <span className="dark"> SMTP Relay </span>
+            </li>
             <li>
               Chosse a name for you key and click create key, this will create an api key
               for you{" "}

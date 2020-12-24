@@ -13,6 +13,14 @@ body {
   font-family: "PT Serif", serif;
 }
 
+.m-s {
+  margin: 1rem 0;
+}
+
+.content_container {
+  padding: 1.2rem;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -289,11 +297,19 @@ h5 {
 }
 
 .dark {
+  width: fit-content;
   background-color: #222;
-  padding: 0.2rem;
+  padding: 0.2rem 0.6rem;
   color: #fff;
+  margin: 0.1rem;
+  display: inline-block;
 }
 
 .steps_container {
   margin-top: 3rem;
+}
+
+.sub_list_item li {
+  padding: 1rem 0;
+  font-size: 1.2rem;
 }
