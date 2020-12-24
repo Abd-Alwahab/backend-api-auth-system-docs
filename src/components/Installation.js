@@ -112,7 +112,7 @@ function Installation() {
             </button>
           }
           triggerStyle={{
-            backgroundColor: "tomato",
+            backgroundColor: mongoOpen ? "green" : "tomato",
             color: "#fff",
             cursor: "pointer",
             padding: "1rem .6rem",
@@ -124,6 +124,24 @@ function Installation() {
             <img src={img} alt="mongo steps" className="docs__img img_step" />
           ))}
         </Collapsible>
+      </p>
+
+      <p className="docs_desc">
+        If you followed the mongoDB steps then you should get you conection string , let
+        us move to the next two environment variables, which will be the{" "}
+        <div className="hilight">
+          token_secret
+          <br /> token_date
+          <br />
+        </div>
+      </p>
+
+      <p className="docs_desc">
+        These are very simple once , for the <span className="dark">token_secret</span>,
+        just give it any long text , juts make sure that is at least{" "}
+        <span className="dark"> 32 charcters</span>, and for the{" "}
+        <span className="dark"> token_date</span>, just give it any number plus the letter
+        d, this will be used for as expire date for the json web token
       </p>
     </div>
   );

@@ -274,6 +274,7 @@ h5 {
   border: none;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .btn-collaps:focus {
@@ -282,5 +283,11 @@ h5 {
 
 .btn-collaps h3 {
   margin-left: 0.6rem;
+  color: #fff;
+}
+
+.dark {
+  background-color: #222;
+  padding: 0.2rem;
   color: #fff;
 }
