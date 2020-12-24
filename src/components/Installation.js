@@ -338,6 +338,16 @@ function Installation() {
             <li>Now, you are done. </li>
           </ol>
         </Collapsible>
+
+        <p className="docs_desc">
+          Now , everything should be ok for you, to maje sure that everything went ok,
+          just run this command in your terminal
+          <span className="dark">npm start</span> , you should be able to see this message{" "}
+          <span className="dark">
+            MongoDB database connection established successfully
+          </span>
+          if not please read the steps and make sure you did everything with me.
+        </p>
       </div>
     </div>
   );

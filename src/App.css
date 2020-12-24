@@ -17,6 +17,19 @@ body {
   margin: 1rem 0;
 }
 
+.m-m {
+  margin: 2.5rem 0 !important;
+}
+
+.p-s {
+  padding: 1rem;
+}
+
+.empty_space {
+  display: inline-block;
+  width: 2rem;
+}
+
 .content_container {
   padding: 1.2rem;
 }
@@ -312,4 +325,34 @@ h5 {
 .sub_list_item li {
   padding: 1rem 0;
   font-size: 1.2rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(all) {
+  background-color: #dddddd;
+}
+
+.box {
+  margin-top: 2rem;
+  width: 50%;
+  background-color: #222;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+.box p {
+  line-height: 1;
 }
