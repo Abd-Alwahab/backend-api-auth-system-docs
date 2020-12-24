@@ -5,10 +5,12 @@ import step_3 from "./../media/installation/step_3.png";
 import step_4 from "./../media/installation/step_4.png";
 import { mongoImages } from "./../util/data";
 import Collapsible from "react-collapsible";
-import { FaArrowDown, FaArrowUp } from "react-icons/fa";
+import { FaArrowDown, FaArrowRight, FaArrowUp } from "react-icons/fa";
 
 function Installation() {
   const [mongoOpen, setMongoOpen] = useState(false);
+  const [sendGridOpen, setSendGridOpen] = useState(false);
+  const [jwtOpen, setJWtOpen] = useState(false);
   return (
     <div>
       <h2>How To Get Started</h2>
@@ -98,14 +100,19 @@ function Installation() {
           open={mongoOpen}
           transitionTime={900}
           transitionCloseTime={300}
-          onClick={() => setMongoOpen(!mongoOpen)}
+          onClosing={() => {
+            setMongoOpen(false);
+          }}
+          onOpening={() => {
+            setMongoOpen(true);
+          }}
           trigger={
             <button className="btn-collaps">
               <div>
                 {!mongoOpen ? (
                   <FaArrowDown size="2em" color="#fff" />
                 ) : (
-                  <FaArrowUp size="2em" color="green" />
+                  <FaArrowRight size="2em" color="#fff" />
                 )}
               </div>
               <h3>Show MondoDB Steps</h3>
@@ -118,6 +125,7 @@ function Installation() {
             padding: "1rem .6rem",
             outlineStyle: "none",
             display: "block",
+            transitionDuration: ".5s",
           }}
         >
           {mongoImages.map((img) => (
@@ -128,29 +136,41 @@ function Installation() {
         <Collapsible
           // tabIndex={0}
           lazyRender
-          open={mongoOpen}
+          open={jwtOpen}
           transitionTime={900}
           transitionCloseTime={300}
-          onClick={() => setMongoOpen(!mongoOpen)}
+          onClosing={() => {
+            setJWtOpen(false);
+          }}
+          onOpening={() => {
+            setJWtOpen(true);
+          }}
+          // onClick={() => {
+          //   setJWtOpen(!jwtOpen);
+          //   console.log(jwtOpen);
+          // }}
           trigger={
             <button className="btn-collaps">
               <div>
-                {!mongoOpen ? (
+                {!jwtOpen ? (
                   <FaArrowDown size="2em" color="#fff" />
                 ) : (
-                  <FaArrowUp size="2em" color="green" />
+                  <FaArrowRight size="2em" color="#fff" />
                 )}
               </div>
-              <h3>Show JSON Web Token Steps</h3>
+              <h3>
+                {!jwtOpen ? "Show JSON Web Token Steps" : "Close JSON Web Token Steps"}
+              </h3>
             </button>
           }
           triggerStyle={{
-            backgroundColor: mongoOpen ? "green" : "tomato",
+            backgroundColor: jwtOpen ? "green" : "tomato",
             color: "#fff",
             cursor: "pointer",
             padding: "1rem .6rem",
             outlineStyle: "none",
             display: "block",
+            transitionDuration: ".5s",
           }}
         >
           <p className="docs_desc">
@@ -184,29 +204,36 @@ function Installation() {
         <Collapsible
           // tabIndex={0}
           lazyRender
-          open={mongoOpen}
+          open={sendGridOpen}
           transitionTime={900}
           transitionCloseTime={300}
-          onClick={() => setMongoOpen(!mongoOpen)}
+          onClick={() => setSendGridOpen(false)}
+          onClosing={() => {
+            setSendGridOpen(false);
+          }}
+          onOpening={() => {
+            setSendGridOpen(true);
+          }}
           trigger={
             <button className="btn-collaps">
               <div>
-                {!mongoOpen ? (
+                {!sendGridOpen ? (
                   <FaArrowDown size="2em" color="#fff" />
                 ) : (
-                  <FaArrowUp size="2em" color="green" />
+                  <FaArrowRight size="2em" color="#fff" />
                 )}
               </div>
               <h3>Show SendGrid Steps</h3>
             </button>
           }
           triggerStyle={{
-            backgroundColor: mongoOpen ? "green" : "tomato",
+            backgroundColor: sendGridOpen ? "green" : "tomato",
             color: "#fff",
             cursor: "pointer",
             padding: "1rem .6rem",
             outlineStyle: "none",
             display: "block",
+            transitionDuration: ".5s",
           }}
         >
           <ol>
