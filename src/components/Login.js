@@ -1,15 +1,15 @@
 import React from "react";
 
-import step_1 from "./../media/signup/step_1.png";
-import step_2 from "./../media/signup/step_2.png";
+import step_1 from "./../media/login/step_1.png";
+import step_2 from "./../media/login/step_2.png";
 
 function Login() {
   return (
     <div>
       {" "}
-      <h2>How To Login With an Exsist Account </h2>
+      <h2>How To Login With an Existing Account </h2>
       <p className="docs_desc">
-        To Login for an exsist account, you need to make a post request to the following
+        To Login for an existing account, you need to make a post request to the following
         endpoint
       </p>
       <br />
@@ -39,11 +39,11 @@ function Login() {
       <p className="docs_desc m-s">You need to send a json object that look like this:</p>
       <img src={step_1} alt="signup step" className="docs__img" />
       <p className="docs_desc m-s">
-        This will create a new user in our database and also it will return the newly
-        created user{" "}
+        This will try to check for the provided info and if everything is corect then it
+        will return a valid json web token that the user can use to login
       </p>
       <img src={step_2} alt="signup step" className="docs__img" />
-      <p className="docs_desc m-s">Thats it, you can create as many users as you want!</p>
+      <p className="docs_desc m-s">Thats it.</p>
     </div>
   );
 }
