@@ -356,3 +356,8 @@ tr:nth-child(all) {
 .box p {
   line-height: 1;
 }
+
+.danger {
+  background-color: tomato;
+  padding: 0.4rem;
+}
