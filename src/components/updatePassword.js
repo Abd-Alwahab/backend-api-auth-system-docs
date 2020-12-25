@@ -1,4 +1,5 @@
 import React from "react";
+import step_5 from "./../media/forgotpassword/step_5.png";
 
 function updatePassword() {
   return (
@@ -58,6 +59,12 @@ function updatePassword() {
           <td>True</td>
         </tr>
       </table>
+
+      <p className="docs_desc m-m">
+        so you should send a json object that look something like this:
+      </p>
+
+      <img src={step_5} alt="forgot password step" className="docs__img" />
     </div>
   );
 }
