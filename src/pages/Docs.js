@@ -6,6 +6,7 @@ import Installation from "../components/Installation";
 import Login from "../components/Login";
 import Signup from "../components/Signup";
 import SubNavList from "../components/SubNavList";
+import updatePassword from "../components/updatePassword";
 
 export default function Docs({ match }) {
   return (
@@ -17,6 +18,7 @@ export default function Docs({ match }) {
         <Route path={`${match.path}/signup`} component={Signup} />
         <Route path={`${match.path}/login`} component={Login} />
         <Route path={`${match.path}/forgotpassword`} component={ForgotPassword} />
+        <Route path={`${match.path}/updatepassword`} component={updatePassword} />
       </div>
     </div>
   );
