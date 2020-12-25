@@ -1,5 +1,7 @@
 import React from "react";
 
+import step_1 from "./../media/forgotpassword/step_1.png";
+
 function ForgotPassword() {
   return (
     <div>
@@ -32,6 +34,13 @@ function ForgotPassword() {
           <td>True</td>
         </tr>
       </table>
+
+      <p className="docs_desc m-s">You need to send a json object that look like this:</p>
+      <img src={step_1} alt="forgot password step" className="docs__img" />
+      <p className="docs_desc m-s">
+        This will try to check for the provided info and if everything is corect then it
+        will send a passwrod reset token to the user email.
+      </p>
     </div>
   );
 }
