@@ -26,6 +26,20 @@ function updatePassword() {
 
       <table>
         <tr>
+          <th>http-header-name</th>
+          <th>value</th>
+          <th>Required</th>
+        </tr>
+
+        <tr>
+          <td>token</td>
+          <td>valid json web token</td>
+          <td>True</td>
+        </tr>
+      </table>
+      <br />
+      <table>
+        <tr>
           <th>Property</th>
           <th>Required</th>
         </tr>
