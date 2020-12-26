@@ -1,5 +1,7 @@
 import React from "react";
 import step_5 from "./../media/forgotpassword/step_5.png";
+import step_6 from "./../media/forgotpassword/step_6.png";
+
 import Authrization from "./authrization";
 
 function updatePassword() {
@@ -54,6 +56,14 @@ function updatePassword() {
       </p>
 
       <img src={step_5} alt="forgot password step" className="docs__img" />
+
+      <p className="docs_desc m-m">
+        After you have send your object then the server will try to veryfiy the provided
+        info and if everything is passed it will update the user and send back a json web
+        token to login the user in as shown below.
+      </p>
+
+      <img src={step_6} alt="forgot password step" className="docs__img" />
     </div>
   );
 }
