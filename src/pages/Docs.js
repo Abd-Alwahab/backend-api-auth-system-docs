@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import Container from "../components/Container";
 import ForgotPassword from "../components/ForgotPassword";
+import GetAllUsers from "../components/GetAllUsers";
 import Installation from "../components/Installation";
 import Login from "../components/Login";
 import Signup from "../components/Signup";
@@ -21,6 +22,7 @@ export default function Docs({ match }) {
         <Route path={`${match.path}/forgotpassword`} component={ForgotPassword} />
         <Route path={`${match.path}/updatepassword`} component={updatePassword} />
         <Route path={`${match.path}/updateme`} component={updateUserInfo} />
+        <Route path={`${match.path}/users`} component={GetAllUsers} />
       </div>
     </div>
   );
