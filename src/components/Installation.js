@@ -16,8 +16,9 @@ function Installation() {
     <div>
       <h2>How To Get Started</h2>
       <p className="docs_desc">
-        To get started you need to jump over to this github repo and download the project
-        to your local enviroment or you can use this command{" "}
+        To get started you need to jump over to this{" "}
+        <a href="https://github.com/Abd-Alwahab/auth-system"> github repo </a> and
+        download the project to your local environment or you can use this command{" "}
         <div className="hilight">
           git clone https://github.com/Abd-Alwahab/auth-system.git
         </div>
@@ -31,12 +32,12 @@ function Installation() {
           command to install some npm packages that we need, so open your terminal in your
           code editor and run the following command
           <div className="hilight">npm install</div>
-          <p className="docs_desc">That will ahead and add the node_modules </p>
+          <p className="docs_desc">That will go ahead and add the node_modules folder </p>
           <img src={step_2} alt="open folder" className="docs__img" />
         </p>
         <p className="docs_desc">
-          Once you have the node_modules added to your porject, now we need to create a
-          file to store the environment variables that we need in order for our
+          Once you have the node_modules folder added to your porject, now we need to
+          create a file to store the environment variables that we need in order for our
           application to run, now if you are wondering why we are using environment
           variables here, well the answer is very simple its just to store secure and
           important information
@@ -45,7 +46,7 @@ function Installation() {
           </p>
           <div className="hilight">touch .env</div>
           <p className="docs_desc">
-            That will ahead and add new file called .env to your project tree{" "}
+            That will go ahead and add new file called .env to your project tree{" "}
           </p>
           <img src={step_3} alt="open folder" className="docs__img" />
           <p className="docs_desc">
@@ -340,7 +341,7 @@ function Installation() {
         </Collapsible>
 
         <p className="docs_desc">
-          Now , everything should be ok for you, to maje sure that everything went ok,
+          Now , everything should be ok for you, to make sure that everything went ok,
           just run this command in your terminal
           <span className="dark">npm start</span> , you should be able to see this message{" "}
           <span className="dark">
