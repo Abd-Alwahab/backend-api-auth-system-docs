@@ -27,7 +27,9 @@ export default function Nav() {
               </li>
 
               <li className="item">
-                <Link className="link">Developer</Link>
+                <Link className="link" to="/developer">
+                  Developer
+                </Link>
               </li>
             </ul>
           </nav>
