@@ -16,6 +16,7 @@ export default function Docs({ match }) {
       <SubNavList match={match} />
 
       <div className="docs_content">
+        <Route path={`${match.path}/`} exact component={Installation} />
         <Route path={`${match.path}/installation`} component={Installation} />
         <Route path={`${match.path}/signup`} component={Signup} />
         <Route path={`${match.path}/login`} component={Login} />
