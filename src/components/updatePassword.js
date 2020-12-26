@@ -1,10 +1,13 @@
 import React from "react";
 import step_5 from "./../media/forgotpassword/step_5.png";
+import Authrization from "./authrization";
 
 function updatePassword() {
   return (
     <div>
       <h2>Update My Password</h2>
+
+      <Authrization />
 
       <p className="docs_desc">
         To Update the password for the currently logged in user, you need to make a PATCH
@@ -19,25 +22,11 @@ function updatePassword() {
       <p className="docs_desc m-m">
         This will make a patch request to the api and it will try find the user and update
         his/her password, however, In order for this to work then we need to provide some
-        needed info to veryfiy this proccess, IN our case we need a valid json web token
-        to be sent as an http header and it shouls has the name " token ", and we need to
-        send three paeaces of information in the request body which are currentPassword,
-        newPassword, passwordConfirm as shown in the tabel below:
+        needed info to veryfiy this proccess, IN our case we need to send three paeaces of
+        information in the request body which are currentPassword, newPassword,
+        passwordConfirm as shown in the tabel below:
       </p>
 
-      <table>
-        <tr>
-          <th>http-header-name</th>
-          <th>value</th>
-          <th>Required</th>
-        </tr>
-
-        <tr>
-          <td>token</td>
-          <td>valid json web token</td>
-          <td>True</td>
-        </tr>
-      </table>
       <br />
       <table>
         <tr>
