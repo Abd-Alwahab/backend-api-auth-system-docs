@@ -10,6 +10,7 @@ function updatePassword() {
       <h2>Update My Password</h2>
 
       <Authrization />
+      <br />
 
       <p className="docs_desc">
         To Update the password for the currently logged in user, you need to make a PATCH
@@ -20,7 +21,8 @@ function updatePassword() {
         PATCH <div className="empty_space"></div>{" "}
         http://localhost:3000/api/v1/users/updateMyPassword
       </span>
-
+      <br />
+      <br />
       <p className="docs_desc m-m">
         This will make a patch request to the api and it will try find the user and update
         his/her password, however, In order for this to work then we need to provide some
@@ -29,7 +31,6 @@ function updatePassword() {
         passwordConfirm as shown in the tabel below:
       </p>
 
-      <br />
       <table>
         <tr>
           <th>Property</th>
@@ -51,13 +52,13 @@ function updatePassword() {
         </tr>
       </table>
 
-      <p className="docs_desc m-m">
+      <p className="docs_desc m-s">
         so you should send a json object that look something like this:
       </p>
 
       <img src={step_5} alt="forgot password step" className="docs__img" />
 
-      <p className="docs_desc m-m">
+      <p className="docs_desc m-s">
         After you have send your object then the server will try to veryfiy the provided
         info and if everything is passed it will update the user and send back a json web
         token to login the user in as shown below.

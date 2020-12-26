@@ -3,10 +3,12 @@ import React from "react";
 function Authrization() {
   return (
     <div>
-      <p className="docs_desc">
-        This Action that we need to take and send a request to the api requires a logged
-        in user.
+      <br />
+      <p className="docs_desc dark">
+        This Action that we need to take requires a logged in user.
       </p>
+
+      <br />
       <p className="docs_desc">
         To Verify that the user is logged in then we need to send an http header to the
         api and this http header contain a valid json web token and this will ensure that
