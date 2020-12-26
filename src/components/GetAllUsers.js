@@ -1,7 +1,6 @@
 import React from "react";
 import Admin from "./Admin";
 import Authrization from "./authrization";
-import step_1 from "./../media/getAllUsers/step_1.png";
 
 function GetAllUsers() {
   return (
@@ -19,7 +18,12 @@ function GetAllUsers() {
         GET <div className="empty_space"></div> http://localhost:3000/api/v1/users/
       </span>
 
-      <img src={step_1} alt="forgot password step" className="docs__img" />
+      <br />
+      <br />
+
+      <p className="docs_desc">
+        This will return an array of the users that we have in the database.
+      </p>
     </div>
   );
 }

@@ -6,7 +6,7 @@ function Admin() {
       <br />
 
       <p className="dark">
-        To get All the user ain the datbase then you must be an admin to perfom this
+        To get All the users ain the datbase then you must be an admin to perform this
         action
       </p>
 
@@ -15,14 +15,14 @@ function Admin() {
         <p className="docs_desc">
           <ul>
             <li>
-              To make any user admin then you need to make this from the database manuly{" "}
+              To make any user admin then you need to make this from the database Manualy{" "}
             </li>
-            <li>open your mongodb atlas account</li>
+            <li>Open your mongodb atlas account</li>
 
-            <li>open the user collection in the database list</li>
-            <li>click on the edit icon for any user</li>
-            <li>change the role property from user to admin</li>
-            <li>login again with this spesifc user to apply the changes</li>
+            <li>Open the user collection in the database list</li>
+            <li>Click on the edit icon for any user</li>
+            <li>Change the role property from user to admin</li>
+            <li>Login again with this spesifc user to apply the changes</li>
           </ul>
         </p>
       </div>
