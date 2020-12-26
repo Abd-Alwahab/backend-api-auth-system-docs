@@ -361,3 +361,24 @@ tr:nth-child(all) {
   background-color: tomato;
   padding: 0.4rem;
 }
+
+.about {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about h2 {
+  background-color: #222;
+  width: fit-content;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 0.6rem;
+}
+
+.about p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
