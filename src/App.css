@@ -363,11 +363,18 @@ tr:nth-child(all) {
 }
 
 .about {
-  width: 50%;
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about div:first-of-type {
+  margin-right: 1.3rem;
 }
 
 .about h2 {
