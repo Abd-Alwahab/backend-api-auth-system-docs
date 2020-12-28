@@ -49,6 +49,13 @@ export default function SubNavList({ match }) {
           </li>
 
           <li className="sub__item">
+            <NavLink className="sub__link" to={`${match.path}/deleteme`}>
+              {" "}
+              Delete Me
+            </NavLink>
+          </li>
+
+          <li className="sub__item">
             <NavLink className="sub__link" to={`${match.path}/users`}>
               {" "}
               Get Users
