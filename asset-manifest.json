@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/learn-auth-api-docs/static/css/main.e49cc978.chunk.css",
-    "main.js": "/learn-auth-api-docs/static/js/main.d133a7f7.chunk.js",
-    "main.js.map": "/learn-auth-api-docs/static/js/main.d133a7f7.chunk.js.map",
+    "main.js": "/learn-auth-api-docs/static/js/main.2e6493ab.chunk.js",
+    "main.js.map": "/learn-auth-api-docs/static/js/main.2e6493ab.chunk.js.map",
     "runtime-main.js": "/learn-auth-api-docs/static/js/runtime-main.cc2fcef8.js",
     "runtime-main.js.map": "/learn-auth-api-docs/static/js/runtime-main.cc2fcef8.js.map",
-    "static/js/2.2b4a5a7e.chunk.js": "/learn-auth-api-docs/static/js/2.2b4a5a7e.chunk.js",
-    "static/js/2.2b4a5a7e.chunk.js.map": "/learn-auth-api-docs/static/js/2.2b4a5a7e.chunk.js.map",
+    "static/js/2.e17b81bb.chunk.js": "/learn-auth-api-docs/static/js/2.e17b81bb.chunk.js",
+    "static/js/2.e17b81bb.chunk.js.map": "/learn-auth-api-docs/static/js/2.e17b81bb.chunk.js.map",
     "static/js/3.dce85aab.chunk.js": "/learn-auth-api-docs/static/js/3.dce85aab.chunk.js",
     "static/js/3.dce85aab.chunk.js.map": "/learn-auth-api-docs/static/js/3.dce85aab.chunk.js.map",
     "index.html": "/learn-auth-api-docs/index.html",
     "static/css/main.e49cc978.chunk.css.map": "/learn-auth-api-docs/static/css/main.e49cc978.chunk.css.map",
-    "static/js/2.2b4a5a7e.chunk.js.LICENSE.txt": "/learn-auth-api-docs/static/js/2.2b4a5a7e.chunk.js.LICENSE.txt",
+    "static/js/2.e17b81bb.chunk.js.LICENSE.txt": "/learn-auth-api-docs/static/js/2.e17b81bb.chunk.js.LICENSE.txt",
     "static/media/abdalwahab.5506f359.png": "/learn-auth-api-docs/static/media/abdalwahab.5506f359.png",
     "static/media/homeBackground.d3295315.png": "/learn-auth-api-docs/static/media/homeBackground.d3295315.png",
     "static/media/App.css": "/learn-auth-api-docs/static/media/profile-header.ec143b52.jpg",
@@ -42,8 +42,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cc2fcef8.js",
-    "static/js/2.2b4a5a7e.chunk.js",
+    "static/js/2.e17b81bb.chunk.js",
     "static/css/main.e49cc978.chunk.css",
-    "static/js/main.d133a7f7.chunk.js"
+    "static/js/main.2e6493ab.chunk.js"
   ]
 }
