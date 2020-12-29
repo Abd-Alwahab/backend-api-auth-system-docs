@@ -1,6 +1,7 @@
 import React from "react";
 import Authrization from "./authrization";
 import step_1 from "./../media/updateUserInfo/step_1.png";
+import HighLightText from "./HighLightText";
 
 function updateUserInfo() {
   return (
@@ -15,11 +16,9 @@ function updateUserInfo() {
         PATCH request to the following endpoint
       </p>
       <br />
-      <span className="hilight m-m">
-        PATCH <div className="empty_space"></div> http://localhost:3000/api/v1/users/me
-      </span>
-      <br />
-      <br />
+
+      <HighLightText text="PATCH" endpoint="http://localhost:3000/api/v1/users/me" />
+
       <p className="docs_desc m-m">
         This will make a patch request to the api and it will try find the user and update
         his/her information, however, In order for this to work then we need to provide

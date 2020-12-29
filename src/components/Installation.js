@@ -6,6 +6,7 @@ import step_4 from "./../media/installation/step_4.png";
 import { mongoImages } from "./../util/data";
 import Collapsible from "react-collapsible";
 import { FaArrowDown, FaArrowRight, FaArrowUp } from "react-icons/fa";
+import HighLightText from "./HighLightText";
 
 function Installation() {
   const [mongoOpen, setMongoOpen] = useState(false);
@@ -17,11 +18,14 @@ function Installation() {
       <h2>How To Get Started</h2>
       <p className="docs_desc">
         To get started you need to jump over to this{" "}
-        <a href="https://github.com/Abd-Alwahab/auth-system"> github repo </a> and
-        download the project to your local environment or you can use this command{" "}
-        <div className="hilight">
-          git clone https://github.com/Abd-Alwahab/auth-system.git
-        </div>
+        <a href="https://github.com/Abd-Alwahab/auth-system" className="m-m">
+          {" "}
+          github repo{" "}
+        </a>{" "}
+        and download the project to your local environment or you can use this command{" "}
+        <br />
+        <br />
+        <HighLightText text=" git clone https://github.com/Abd-Alwahab/auth-system.git" />
         <p className="docs_desc">
           Now, you have the project localy on your OS, its time for you to open it in your
           code editor (I use VSCode)
@@ -31,7 +35,9 @@ function Installation() {
           Now, once you open the project in your code editor, we need to run the following
           command to install some npm packages that we need, so open your terminal in your
           code editor and run the following command
-          <div className="hilight">npm install</div>
+          <br />
+          <br />
+          <HighLightText text="npm install" />
           <p className="docs_desc">That will go ahead and add the node_modules folder </p>
           <img src={step_2} alt="open folder" className="docs__img" />
         </p>
