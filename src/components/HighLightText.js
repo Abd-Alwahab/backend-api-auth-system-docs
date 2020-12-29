@@ -1,12 +1,23 @@
 import React, { useState } from "react";
 import copy from "copy-to-clipboard";
 import { ToastContainer, toast } from "react-toastify";
-import { FaCopy } from "react-icons/fa";
+import { FaClipboard, FaCheckCircle } from "react-icons/fa";
 
 function HighLightText({ text, endpoint }) {
   const [isCopied, setIsCopied] = useState(false);
 
-  const notify = () => toast.success("Text Copied");
+  const notify = () => {
+    toast.success("Text Copied", {
+      closeOnClick: true,
+      autoClose: 1200,
+      hideProgressBar: true,
+      onClose: () => {
+        setIsCopied(false);
+      },
+    });
+    setIsCopied(true);
+  };
+
   return (
     <div
       onClick={() => {
@@ -17,7 +28,11 @@ function HighLightText({ text, endpoint }) {
     >
       <span className="hilight">
         {text} <div className="empty_space"></div> {endpoint}
-        <FaCopy size={20} color="tomato" className="icon" />
+        {isCopied ? (
+          <FaCheckCircle size={25} color="green" className="icon" />
+        ) : (
+          <FaClipboard size={25} color="#fff" className="icon" />
+        )}
       </span>
 
       <ToastContainer />
