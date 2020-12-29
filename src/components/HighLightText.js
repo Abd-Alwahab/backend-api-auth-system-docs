@@ -12,15 +12,21 @@ function HighLightText({ text, endpoint }) {
       className="textCopied-parent"
     >
       {isCopied ? (
-        <div className="textCopied">
+        <div className={isCopied ? "textCopied shown" : "textCopied hidden"}>
           Text Copied{" "}
-          <span className="close" onClick={() => setIsCopied(false)}>
+          <div
+            className="close"
+            onClick={() => {
+              setIsCopied(false);
+              console.log("Close");
+            }}
+          >
             {" "}
             x{" "}
-          </span>
+          </div>
         </div>
       ) : null}
-      <span className="hilight m-m">
+      <span className="hilight">
         {text} <div className="empty_space"></div> {endpoint}
       </span>
     </div>
