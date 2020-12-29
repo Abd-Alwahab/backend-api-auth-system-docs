@@ -18,10 +18,6 @@ function updatePassword() {
         request to the following endpoint
       </p>
       <br />
-      {/* <span className="hilight m-m">
-        PATCH <div className="empty_space"></div>{" "}
-        http://localhost:3000/api/v1/users/updateMyPassword
-      </span> */}
 
       <HighLightText
         endpoint=" http://localhost:3000/api/v1/users/updateMyPassword"

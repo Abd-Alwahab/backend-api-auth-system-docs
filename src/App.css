@@ -484,6 +484,7 @@ tr:nth-child(all) {
 .textCopied-parent {
   width: fit-content;
   position: relative;
+  display: flex;
 }
 
 .textCopied {
@@ -524,4 +525,8 @@ tr:nth-child(all) {
   border-radius: 50%;
   z-index: 99999;
   position: absolute;
+}
+
+.icon {
+  margin-left: 1.3rem;
 }

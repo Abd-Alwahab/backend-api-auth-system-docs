@@ -50,7 +50,7 @@ function Installation() {
           <p className="docs_desc">
             To create the environment variables you need to run the follwoing command{" "}
           </p>
-          <div className="hilight">touch .env</div>
+          <HighLightText text="touch .env" />
           <p className="docs_desc">
             That will go ahead and add new file called .env to your project tree{" "}
           </p>
