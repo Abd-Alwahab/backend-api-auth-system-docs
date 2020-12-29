@@ -1,6 +1,7 @@
 import React from "react";
 import step_1 from "./../media/signup/step_1.png";
 import step_2 from "./../media/signup/step_2.png";
+import HighLightText from "./HighLightText";
 
 function Signup() {
   return (
@@ -11,9 +12,8 @@ function Signup() {
         endpoint
       </p>
       <br />
-      <span className="hilight m-m">
-        POST <div className="empty_space"></div> http://localhost:3000/api/v1/users/signup
-      </span>
+
+      <HighLightText text="POST" endpoint="http://localhost:3000/api/v1/users/signup" />
 
       <p className="docs_desc m-m">
         This will make a post request to the api and it will create a new user, however,

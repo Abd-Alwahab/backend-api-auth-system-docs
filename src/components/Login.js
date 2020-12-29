@@ -2,6 +2,7 @@ import React from "react";
 
 import step_1 from "./../media/login/step_1.png";
 import step_2 from "./../media/login/step_2.png";
+import HighLightText from "./HighLightText";
 
 function Login() {
   return (
@@ -13,9 +14,7 @@ function Login() {
         endpoint
       </p>
       <br />
-      <span className="hilight m-m">
-        POST <div className="empty_space"></div> http://localhost:3000/api/v1/users/login
-      </span>
+      <HighLightText text="POST" endpoint="http://localhost:3000/api/v1/users/login" />
       <p className="docs_desc m-m">
         This will make a post request to the api and it will try send back json wdeb
         token, however, In order for this to work then we need to provide some needed info

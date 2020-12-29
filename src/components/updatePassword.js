@@ -3,6 +3,7 @@ import step_5 from "./../media/forgotpassword/step_5.png";
 import step_6 from "./../media/forgotpassword/step_6.png";
 
 import Authrization from "./authrization";
+import HighLightText from "./HighLightText";
 
 function updatePassword() {
   return (
@@ -17,10 +18,15 @@ function updatePassword() {
         request to the following endpoint
       </p>
       <br />
-      <span className="hilight m-m">
+      {/* <span className="hilight m-m">
         PATCH <div className="empty_space"></div>{" "}
         http://localhost:3000/api/v1/users/updateMyPassword
-      </span>
+      </span> */}
+
+      <HighLightText
+        endpoint=" http://localhost:3000/api/v1/users/updateMyPassword"
+        text="PATCH"
+      />
       <br />
       <br />
       <p className="docs_desc m-m">

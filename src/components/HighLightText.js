@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 function HighLightText({ text, endpoint }) {
   const [isCopied, setIsCopied] = useState(false);
 
-  const notify = () => toast("Text Copied");
+  const notify = () => toast.success("Text Copied");
   return (
     <div
       onClick={() => {
