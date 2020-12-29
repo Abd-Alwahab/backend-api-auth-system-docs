@@ -1,5 +1,6 @@
 import React from "react";
 import Authrization from "./authrization";
+import HighLightText from "./HighLightText";
 
 function DeleteMe() {
   return (
@@ -13,9 +14,8 @@ function DeleteMe() {
         endpoint
       </p>
       <br />
-      <span className="hilight m-m">
-        DELETE <div className="empty_space"></div> http://localhost:3000/api/v1/users/me
-      </span>
+
+      <HighLightText text="DELETE" endpoint="http://localhost:3000/api/v1/users/me" />
       <p className="docs_desc m-m">
         This will make a delete request to the api and it will try to deactivate your
         account.
