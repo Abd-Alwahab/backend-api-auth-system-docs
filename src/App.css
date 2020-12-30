@@ -553,4 +553,12 @@ tr:nth-child(all) {
   .header__box {
     width: 90%;
   }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about div:first-of-type {
+    margin-right: 0;
+  }
 }
