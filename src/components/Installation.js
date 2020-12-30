@@ -25,7 +25,7 @@ function Installation() {
         and download the project to your local environment or you can use this command{" "}
         <br />
         <br />
-        <HighLightText text=" git clone https://github.com/Abd-Alwahab/auth-system.git" />
+        <HighLightText endpoint="git clone https://github.com/Abd-Alwahab/auth-system.git" />
         <p className="docs_desc">
           Now, you have the project localy on your OS, its time for you to open it in your
           code editor (I use VSCode)
@@ -37,7 +37,7 @@ function Installation() {
           code editor and run the following command
           <br />
           <br />
-          <HighLightText text="npm install" />
+          <HighLightText endpoint="npm install" />
           <p className="docs_desc">That will go ahead and add the node_modules folder </p>
           <img src={step_2} alt="open folder" className="docs__img" />
         </p>
@@ -50,7 +50,7 @@ function Installation() {
           <p className="docs_desc">
             To create the environment variables you need to run the follwoing command{" "}
           </p>
-          <HighLightText text="touch .env" />
+          <HighLightText endpoint="touch .env" />
           <p className="docs_desc">
             That will go ahead and add new file called .env to your project tree{" "}
           </p>
