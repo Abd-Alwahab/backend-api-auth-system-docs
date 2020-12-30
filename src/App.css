@@ -530,3 +530,27 @@ tr:nth-child(all) {
 .icon {
   margin-left: 1.3rem;
 }
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 70vh;
+    margin-top: 50%;
+  }
+
+  .header__img--container {
+    width: 65%;
+    /* background-color: antiquewhite; */
+  }
+
+  .header__box {
+    width: 90%;
+  }
+}
