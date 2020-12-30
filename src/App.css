@@ -532,9 +532,15 @@ tr:nth-child(all) {
 }
 
 @media only screen and (max-width: 1200px) {
+  .preview-profile-header-box {
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
+  .preview-profile-header-box {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -560,5 +566,9 @@ tr:nth-child(all) {
 
   .about div:first-of-type {
     margin-right: 0;
+  }
+
+  .preview-profile-header-box {
+    width: 95%;
   }
 }
