@@ -4,6 +4,7 @@ import step_1 from "./../media/forgotpassword/step_1.png";
 import step_2 from "./../media/forgotpassword/step_2.png";
 import step_3 from "./../media/forgotpassword/step_3.png";
 import step_4 from "./../media/forgotpassword/step_4.png";
+import HighLightText from "./HighLightText";
 
 function ForgotPassword() {
   return (
@@ -14,10 +15,11 @@ function ForgotPassword() {
         following endpoint
       </p>
       <br />
-      <span className="hilight m-m">
-        POST <div className="empty_space"></div>{" "}
-        http://localhost:3000/api/v1/users/forgotpassword
-      </span>
+
+      <HighLightText
+        text=" POST"
+        endpoint="http://localhost:3000/api/v1/users/forgotpassword"
+      />
 
       <p className="docs_desc m-m">
         This will make a post request to the api and it will try send an email with the
@@ -57,10 +59,11 @@ function ForgotPassword() {
         endpoint
       </p>
       <br />
-      <span className="hilight m-m">
-        POST <div className="empty_space"></div>{" "}
-        http://localhost:3000/api/v1/users/resetPassword/:token
-      </span>
+
+      <HighLightText
+        text="POST"
+        endpoint="http://localhost:3000/api/v1/users/resetPassword/:token"
+      />
 
       <p className="docs_desc m-m">
         however, In order for this thing to work as it should then we need to send along
@@ -74,6 +77,8 @@ function ForgotPassword() {
         http://localhost:3000/api/v1/users/resetPassword/
         <span className="danger">dfklahdlkjshzjksfhsksfkjsfskf</span>
       </span>
+
+      {/* <HighLightText text="POST" endpoint="" /> */}
 
       <br />
       <p className="docs_desc m-m">
