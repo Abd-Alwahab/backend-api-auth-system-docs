@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/learn-auth-api-docs/static/css/main.dc0a886d.chunk.css",
-    "main.js": "/learn-auth-api-docs/static/js/main.5ed0a681.chunk.js",
-    "main.js.map": "/learn-auth-api-docs/static/js/main.5ed0a681.chunk.js.map",
+    "main.css": "/learn-auth-api-docs/static/css/main.7a30c2d5.chunk.css",
+    "main.js": "/learn-auth-api-docs/static/js/main.728963d8.chunk.js",
+    "main.js.map": "/learn-auth-api-docs/static/js/main.728963d8.chunk.js.map",
     "runtime-main.js": "/learn-auth-api-docs/static/js/runtime-main.deb06342.js",
     "runtime-main.js.map": "/learn-auth-api-docs/static/js/runtime-main.deb06342.js.map",
     "static/css/2.ccc6f86f.chunk.css": "/learn-auth-api-docs/static/css/2.ccc6f86f.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.1c6dba62.chunk.js.map": "/learn-auth-api-docs/static/js/3.1c6dba62.chunk.js.map",
     "index.html": "/learn-auth-api-docs/index.html",
     "static/css/2.ccc6f86f.chunk.css.map": "/learn-auth-api-docs/static/css/2.ccc6f86f.chunk.css.map",
-    "static/css/main.dc0a886d.chunk.css.map": "/learn-auth-api-docs/static/css/main.dc0a886d.chunk.css.map",
+    "static/css/main.7a30c2d5.chunk.css.map": "/learn-auth-api-docs/static/css/main.7a30c2d5.chunk.css.map",
     "static/js/2.0034f1c8.chunk.js.LICENSE.txt": "/learn-auth-api-docs/static/js/2.0034f1c8.chunk.js.LICENSE.txt",
     "static/media/abdalwahab.5506f359.png": "/learn-auth-api-docs/static/media/abdalwahab.5506f359.png",
     "static/media/homeBackground.d3295315.png": "/learn-auth-api-docs/static/media/homeBackground.d3295315.png",
@@ -46,7 +46,7 @@
     "static/js/runtime-main.deb06342.js",
     "static/css/2.ccc6f86f.chunk.css",
     "static/js/2.0034f1c8.chunk.js",
-    "static/css/main.dc0a886d.chunk.css",
-    "static/js/main.5ed0a681.chunk.js"
+    "static/css/main.7a30c2d5.chunk.css",
+    "static/js/main.728963d8.chunk.js"
   ]
 }
