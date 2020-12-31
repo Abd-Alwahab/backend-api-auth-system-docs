@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/learn-auth-api-docs/static/css/main.7a30c2d5.chunk.css",
-    "main.js": "/learn-auth-api-docs/static/js/main.728963d8.chunk.js",
-    "main.js.map": "/learn-auth-api-docs/static/js/main.728963d8.chunk.js.map",
+    "main.js": "/learn-auth-api-docs/static/js/main.c5064fa3.chunk.js",
+    "main.js.map": "/learn-auth-api-docs/static/js/main.c5064fa3.chunk.js.map",
     "runtime-main.js": "/learn-auth-api-docs/static/js/runtime-main.deb06342.js",
     "runtime-main.js.map": "/learn-auth-api-docs/static/js/runtime-main.deb06342.js.map",
     "static/css/2.ccc6f86f.chunk.css": "/learn-auth-api-docs/static/css/2.ccc6f86f.chunk.css",
@@ -47,6 +47,6 @@
     "static/css/2.ccc6f86f.chunk.css",
     "static/js/2.0034f1c8.chunk.js",
     "static/css/main.7a30c2d5.chunk.css",
-    "static/js/main.728963d8.chunk.js"
+    "static/js/main.c5064fa3.chunk.js"
   ]
 }
